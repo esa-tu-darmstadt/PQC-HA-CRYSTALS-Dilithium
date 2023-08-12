@@ -202,7 +202,7 @@ int crypto_sign(uint8_t *sm,
   size_t i;
 
   for(i = 0; i < mlen; ++i)
-    sm[CRYPTO_BYTES + mlen - 1 - i] = m[mlen - 1 - i];
+    sm[CRYPTO_BYTES + i] = m[i];
   crypto_sign_signature(sm, smlen, sm + CRYPTO_BYTES, mlen, sk);
   *smlen += mlen;
   return 0;

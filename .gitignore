@@ -19,3 +19,10 @@ tvecs5aes
 tmillion2
 tmillion3
 tmillion5
+
+core
+compose
+tapasco-setup.sh
+DSE_*
+vitis_hls.log
+*.bak

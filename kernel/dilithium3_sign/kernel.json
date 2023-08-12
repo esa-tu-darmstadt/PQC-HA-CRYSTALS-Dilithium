@@ -1,0 +1,26 @@
+{
+	"Description": "CRYSTALS Dilithium (III) Signature Generation",
+	"Name": "dilithium3_sign",
+	"Id": 1032,
+	"Version": "0.2.0",
+	"TopFunction": "pqcrystals_dilithium3_ref",
+	"Files": [
+		"../../ref/fips202.c",
+		"../../ref/symmetric-shake.c",
+		"../../ref/ntt.c",
+		"../../ref/packing.c",
+		"../../ref/poly.c",
+		"../../ref/polyvec.c",
+		"../../ref/reduce.c",
+		"../../ref/rounding.c",
+		"../../ref/sign.c"
+	],
+	"Arguments": [
+		{ "Name": "sm", "Passing": "by reference" },
+		{ "Name": "smlen", "Passing": "by reference" },
+		{ "Name": "m", "Passing": "by reference" },
+		{ "Name": "mlen" },
+		{ "Name": "sk", "Passing": "by reference" }
+	],
+	"CompilerFlags": [ "-DDILITHIUM_MODE=3" ]
+}

@@ -1,0 +1,26 @@
+{
+	"Description": "CRYSTALS Dilithium (V) Signature Verification",
+	"Name": "dilithium5_verify",
+	"Id": 1053,
+	"Version": "0.2.0",
+	"TopFunction": "pqcrystals_dilithium5_ref_open",
+	"Files": [
+		"../../ref/fips202.c",
+		"../../ref/symmetric-shake.c",
+		"../../ref/ntt.c",
+		"../../ref/packing.c",
+		"../../ref/poly.c",
+		"../../ref/polyvec.c",
+		"../../ref/reduce.c",
+		"../../ref/rounding.c",
+		"../../ref/sign.c"
+	],
+	"Arguments": [
+		{ "Name": "m", "Passing": "by reference" },
+		{ "Name": "mlen", "Passing": "by reference" },
+		{ "Name": "sm", "Passing": "by reference" },
+		{ "Name": "smlen" },
+		{ "Name": "pk", "Passing": "by reference" }
+	],
+	"CompilerFlags": [ "-DDILITHIUM_MODE=5" ]
+}
